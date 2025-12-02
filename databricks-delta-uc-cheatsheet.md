@@ -165,7 +165,7 @@ Modern best practice is:
 - Configure **Unity Catalog volumes** or secure external locations.
 - Read/write using UC tables (`catalog.schema.table`) instead of raw paths as much as possible.
 
-This connects with **Delta + UC** (next lessons).
+This connects with **Delta + UC**.
 
 ---
 
@@ -233,7 +233,7 @@ spark.conf.set("spark.sql.shuffle.partitions", "200")
 
 ```
 
-This ties back to performance (Lesson 8):
+This ties back to performance:
 
 - For big joins/aggregations, you may adjust `spark.sql.shuffle.partitions`.
 - Also for broadcast threshold, etc. (high-level mention is enough for junior).
@@ -429,8 +429,6 @@ A possible naming under UC later:
 - `bank_lake.bronze.transactions_raw`
 - `bank_lake.silver.transactions_enriched`
 - `bank_lake.gold.daily_kpi`
-
-We’ll wire this properly in Lesson 11 with Unity Catalog.
 
 ---
 
